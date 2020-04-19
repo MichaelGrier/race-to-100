@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Race to 100 is a fun dice game for ages eight and up, which helps to build number sense.">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <title>Race to 100</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <!--Open Modal-->
+            <button class="btn-rules">Rules</button>
+            <!--Modal-->
+            <div id="rulesModal" class="modal">
+                <!--Modal Content-->
+                <div class="modal-content">
+                    <span class="close">&times;</span><br><br>
+                    <p><strong>How to Play Race to 100:</strong></p>
+                        <ul>
+                        <li>The game is designed for 2 players</li>
+                        <li>In each turn, a player can roll the dice as many times as they want. Each roll get added to their CURRENT score.</li>
+                        <li>BUT, if the player rolls a 1, all of their CURRENT score gets lost, and their turn automatically ends.</li>
+                        <li>The player can choose to 'Hold' at any point, which means that they end their turn, and their CURRENT score gets added to their TOTAL score.</li>
+                        <li>The first player to reach 100 points on their TOTAL score wins the game</li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new"><ion-icon name="add-circle-outline"></ion-icon>New game</button>
+            <button class="btn-roll"><ion-icon name="sync-circle-outline"></ion-icon>Roll dice</button>
+            <button class="btn-hold"><ion-icon name="download-outline"></ion-icon>Hold</button>
+            
+            <input type="text" placeholder="Final score" class="final-score">
+            
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+            <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
+        </div>
+        
+        <!--<script src="app.js"></script>-->
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    </body>
+</html>
